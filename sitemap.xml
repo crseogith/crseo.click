@@ -1,6 +1,20 @@
-<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset>
 <url>
-<loc>https://crseo.click/</loc>
-<lastmod>2026-02-14T20:11:51+00:00</lastmod>
+<loc>https://crseo.click</loc>
+<lastmod>2026-02-14</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://crseo.click/mentions-legales.html</loc>
+<lastmod>2026-02-14</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://crseo.click/index.html</loc>
+<lastmod>2026-02-14</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 </urlset>
