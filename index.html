@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRSEO.click - PBN Premium avec Accès Auteur | Backlinks de Qualité</title>
+    <meta name="description" content="Accédez à un réseau de blogs premium avec droits auteur. PBN de qualité pour vos stratégies SEO. Backlinks puissants et naturels.">
+
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #0A0E27;
+            --secondary: #FF6B35;
+            --accent: #00F5FF;
+            --text: #1A1A2E;
+            --text-light: #6B7280;
+            --bg: #FAFBFC;
+            --card-bg: #FFFFFF;
+            --border: #E5E7EB;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'IBM Plex Mono', monospace;
+            background: var(--bg);
+            color: var(--text);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Syne', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: rgba(255, 255, 255, 0.95) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--primary);
+            padding: 1rem 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .navbar-brand {
+            font-family: 'Syne', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--primary) !important;
+            letter-spacing: -0.02em;
+        }
+
+        .navbar-brand span {
+            color: var(--secondary);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #0A0E27 0%, #1A1A2E 100%);
+            overflow: hidden;
+            padding: 4rem 0;
+        }
+
+        .hero-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(rgba(0, 245, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 245, 255, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes gridMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            color: #FFFFFF;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: -0.03em;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        .hero-title .highlight {
+            background: linear-gradient(135deg, var(--accent), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: inline-block;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 3rem;
+            max-width: 600px;
+            animation: slideUp 0.8s ease-out 0.2s both;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-illustration {
+            position: relative;
+            animation: slideUp 0.8s ease-out 0.4s both;
+        }
+
+        .pbn-visual {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .network-node {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        .network-node:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); animation-delay: 0s; }
+        .network-node:nth-child(2) { top: 25%; left: 10%; animation-delay: 0.5s; }
+        .network-node:nth-child(3) { top: 25%; right: 10%; animation-delay: 1s; }
+        .network-node:nth-child(4) { bottom: 25%; left: 20%; animation-delay: 1.5s; }
+        .network-node:nth-child(5) { bottom: 25%; right: 20%; animation-delay: 2s; }
+        .network-node:nth-child(6) { bottom: 0; left: 50%; transform: translateX(-50%); animation-delay: 2.5s; }
+
+        .center-node {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--secondary), #FF8C5A);
+            border: 4px solid var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            position: relative;
+            margin: 150px auto;
+            box-shadow: 0 0 60px rgba(0, 245, 255, 0.5);
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.7; }
+            50% { transform: scale(1.1); opacity: 1; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .network-line {
+            position: absolute;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+            transform-origin: left center;
+        }
+
+        /* CTA Buttons */
+        .btn-primary-custom {
+            background: var(--secondary);
+            color: white;
+            border: none;
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Syne', sans-serif;
+        }
+
+        .btn-primary-custom:hover {
+            background: #FF8C5A;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.4);
+        }
+
+        .btn-secondary-custom {
+            background: transparent;
+            color: white;
+            border: 2px solid var(--accent);
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+            font-family: 'Syne', sans-serif;
+        }
+
+        .btn-secondary-custom:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background: var(--primary);
+            color: white;
+            padding: 4rem 0;
+            border-top: 3px solid var(--secondary);
+            border-bottom: 3px solid var(--secondary);
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .stat-number {
+            font-family: 'Syne', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--accent);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            opacity: 0.8;
+        }
+
+        /* Features Section */
+        .features-section {
+            padding: 6rem 0;
+            background: var(--bg);
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary), var(--accent));
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 4rem;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            border: 2px solid var(--border);
+            border-radius: 0;
+            padding: 2.5rem;
+            height: 100%;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary), var(--accent));
+            transition: left 0.4s ease;
+        }
+
+        .feature-card:hover {
+            border-color: var(--secondary);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card:hover::before {
+            left: 0;
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--secondary), #FF8C5A);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .feature-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .feature-description {
+            color: var(--text-light);
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        /* Process Section */
+        .process-section {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, var(--primary) 0%, #1A1A2E 100%);
+            color: white;
+        }
+
+        .process-step {
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        .step-number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50px;
+            height: 50px;
+            background: var(--secondary);
+            color: white;
+            border-radius: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+            font-family: 'Syne', sans-serif;
+        }
+
+        .step-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+
+        .step-description {
+            opacity: 0.9;
+            line-height: 1.7;
+        }
+
+        /* Pricing Cards */
+        .pricing-section {
+            padding: 6rem 0;
+            background: var(--bg);
+        }
+
+        .pricing-card {
+            background: var(--card-bg);
+            border: 2px solid var(--border);
+            border-radius: 0;
+            padding: 3rem 2rem;
+            text-align: center;
+            transition: all 0.4s ease;
+            height: 100%;
+            position: relative;
+        }
+
+        .pricing-card.featured {
+            border-color: var(--secondary);
+            border-width: 3px;
+            transform: scale(1.05);
+            box-shadow: 0 20px 60px rgba(255, 107, 53, 0.2);
+        }
+
+        .pricing-badge {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background: var(--secondary);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .pricing-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .pricing-card.featured:hover {
+            transform: scale(1.05) translateY(-10px);
+        }
+
+        .plan-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .plan-price {
+            font-size: 3rem;
+            font-weight: 800;
+            font-family: 'Syne', sans-serif;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .plan-period {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .plan-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .plan-features li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border);
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .plan-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 6rem 0;
+            background: var(--card-bg);
+        }
+
+        .accordion-item {
+            background: var(--bg);
+            border: 2px solid var(--border);
+            border-radius: 0;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .accordion-button {
+            background: var(--bg);
+            color: var(--text);
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 1.5rem;
+            border-radius: 0;
+            font-family: 'Syne', sans-serif;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background: var(--primary);
+            color: white;
+            box-shadow: none;
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: var(--secondary);
+        }
+
+        .accordion-button::after {
+            filter: brightness(0);
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            filter: brightness(10);
+        }
+
+        .accordion-body {
+            padding: 1.5rem;
+            line-height: 1.7;
+            color: var(--text-light);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, var(--secondary) 0%, #FF8C5A 100%);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 20px,
+                rgba(255, 255, 255, 0.05) 20px,
+                rgba(255, 255, 255, 0.05) 40px
+            );
+            animation: moveStripes 20s linear infinite;
+        }
+
+        @keyframes moveStripes {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-title {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+        }
+
+        .cta-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            opacity: 0.95;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary);
+            color: white;
+            padding: 3rem 0 1rem;
+            border-top: 3px solid var(--secondary);
+        }
+
+        .footer-brand {
+            font-family: 'Syne', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 2rem;
+            padding-top: 2rem;
+            text-align: center;
+            opacity: 0.7;
+        }
+
+        /* Animations on scroll */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+            }
+
+            .pricing-card.featured {
+                transform: scale(1);
+                margin-top: 2rem;
+            }
+
+            .process-step {
+                padding-left: 3rem;
+            }
+
+            .step-number {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">CRSEO<span>.click</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Avantages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#process">Processus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary-custom ms-3" href="#contact">Commencer</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-grid"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="hero-title">
+                        PBN Premium<br>
+                        <span class="highlight">Accès Auteur</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Propulsez votre stratégie SEO avec notre réseau de blogs de qualité.
+                        Publiez vos contenus avec droits d'auteur et obtenez des backlinks puissants.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#pricing" class="btn btn-primary-custom">Découvrir nos offres</a>
+                        <a href="#features" class="btn btn-secondary-custom">En savoir plus</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-illustration">
+                    <div class="pbn-visual">
+                        <div class="network-node">🌐</div>
+                        <div class="network-node">📝</div>
+                        <div class="network-node">🔗</div>
+                        <div class="network-node">📊</div>
+                        <div class="network-node">🎯</div>
+                        <div class="network-node">✨</div>
+                        <div class="center-node">🚀</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Blogs Premium</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <div class="stat-number">DA 30+</div>
+                        <div class="stat-label">Autorité Moyenne</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <div class="stat-number">1200+</div>
+                        <div class="stat-label">Clients Satisfaits</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Taux de Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Pourquoi choisir CRSEO ?</h2>
+                <p class="section-subtitle">Des avantages conçus pour les professionnels du SEO</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="feature-card">
+                        <div class="feature-icon">✍️</div>
+                        <h3 class="feature-title">Accès Auteur Complet</h3>
+                        <p class="feature-description">
+                            Publiez vos articles avec vos propres identifiants d'auteur.
+                            Contrôle total sur votre contenu et votre profil.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3 class="feature-title">Blogs Thématiques</h3>
+                        <p class="feature-description">
+                            Sélectionnez parmi notre catalogue de blogs classés par thématique
+                            pour des backlinks ultra-pertinents.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="feature-card">
+                        <div class="feature-icon">📈</div>
+                        <h3 class="feature-title">Métriques Garanties</h3>
+                        <p class="feature-description">
+                            Tous nos blogs affichent un Domain Authority minimum de 20+
+                            et un trafic organique vérifié.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3 class="feature-title">Publication Rapide</h3>
+                        <p class="feature-description">
+                            Vos articles sont publiés sous 48h maximum.
+                            Interface intuitive pour une gestion simplifiée.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3 class="feature-title">Liens Permanents</h3>
+                        <p class="feature-description">
+                            Vos backlinks sont garantis permanents.
+                            Aucun risque de suppression ou de modification.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3 class="feature-title">Reporting Détaillé</h3>
+                        <p class="feature-description">
+                            Dashboard complet avec métriques en temps réel,
+                            historique des publications et analytics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-white">Comment ça marche ?</h2>
+                <p class="section-subtitle text-white opacity-75">Un processus simple et efficace</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="process-step animate-on-scroll">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">Choisissez votre formule</h3>
+                        <p class="step-description">
+                            Sélectionnez le plan qui correspond à vos besoins : Starter, Professional ou Enterprise.
+                            Chaque formule inclut l'accès auteur et des métriques garanties.
+                        </p>
+                    </div>
+                    <div class="process-step animate-on-scroll">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">Sélectionnez vos blogs</h3>
+                        <p class="step-description">
+                            Accédez à notre catalogue de blogs et filtrez par thématique, DA, DR, trafic.
+                            Consultez les métriques détaillées de chaque blog avant de choisir.
+                        </p>
+                    </div>
+                    <div class="process-step animate-on-scroll">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">Publiez votre contenu</h3>
+                        <p class="step-description">
+                            Rédigez votre article directement dans notre éditeur ou importez-le.
+                            Ajoutez vos ancres, vos liens et programmez la publication.
+                        </p>
+                    </div>
+                    <div class="process-step animate-on-scroll">
+                        <div class="step-number">4</div>
+                        <h3 class="step-title">Suivez vos performances</h3>
+                        <p class="step-description">
+                            Accédez à votre dashboard pour suivre l'évolution de vos backlinks,
+                            leur indexation et l'impact sur votre SEO en temps réel.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Nos formules</h2>
+                <p class="section-subtitle">Des tarifs adaptés à tous les professionnels</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="pricing-card">
+                        <h3 class="plan-name">Starter</h3>
+                        <div class="plan-price">299€</div>
+                        <div class="plan-period">/ mois</div>
+                        <ul class="plan-features">
+                            <li>10 publications / mois</li>
+                            <li>Accès auteur complet</li>
+                            <li>DA 20-30</li>
+                            <li>Support par email</li>
+                            <li>Dashboard analytics</li>
+                            <li>Liens permanents</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary-custom w-100">Commencer</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="pricing-card featured">
+                        <div class="pricing-badge">Populaire</div>
+                        <h3 class="plan-name">Professional</h3>
+                        <div class="plan-price">699€</div>
+                        <div class="plan-period">/ mois</div>
+                        <ul class="plan-features">
+                            <li>30 publications / mois</li>
+                            <li>Accès auteur complet</li>
+                            <li>DA 30-50</li>
+                            <li>Support prioritaire</li>
+                            <li>Dashboard analytics avancé</li>
+                            <li>Liens permanents</li>
+                            <li>API access</li>
+                            <li>White label option</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary-custom w-100">Commencer</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="pricing-card">
+                        <h3 class="plan-name">Enterprise</h3>
+                        <div class="plan-price">Sur devis</div>
+                        <div class="plan-period">Personnalisé</div>
+                        <ul class="plan-features">
+                            <li>Publications illimitées</li>
+                            <li>Accès auteur complet</li>
+                            <li>DA 50+</li>
+                            <li>Account manager dédié</li>
+                            <li>Reporting personnalisé</li>
+                            <li>Liens permanents</li>
+                            <li>API complète</li>
+                            <li>White label total</li>
+                            <li>SLA garanti</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary-custom w-100">Nous contacter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Questions fréquentes</h2>
+                <p class="section-subtitle">Tout ce que vous devez savoir sur notre service PBN</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Qu'est-ce qu'un PBN avec accès auteur ?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Un PBN (Private Blog Network) avec accès auteur vous permet de publier vos articles
+                                    directement sur nos blogs avec vos propres identifiants. Vous apparaissez comme l'auteur
+                                    officiel, ce qui renforce la légitimité et la naturalité de vos backlinks. Contrairement
+                                    aux services classiques où vous envoyez simplement du contenu, ici vous contrôlez
+                                    entièrement la publication.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Comment sont sélectionnés vos blogs ?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Chaque blog de notre réseau passe par un processus de vérification rigoureux. Nous analysons
+                                    le Domain Authority (DA), le Domain Rating (DR), le trafic organique, l'historique du domaine,
+                                    la qualité des contenus existants et la thématique. Seuls les blogs répondant à nos critères
+                                    stricts de qualité sont intégrés au réseau. Nous évitons les footprints et privilégions
+                                    la diversité des hébergeurs et des IP.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Mes backlinks sont-ils permanents ?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Oui, absolument. Tous les backlinks créés via notre service sont garantis permanents.
+                                    Vos articles ne seront jamais supprimés, modifiés ou remplacés sans votre accord.
+                                    Cette permanence est essentielle pour construire une stratégie SEO durable et préserver
+                                    l'autorité que vous avez développée au fil du temps.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Puis-je choisir les blogs sur lesquels je publie ?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Bien sûr ! Notre plateforme vous donne accès à un catalogue complet de blogs avec toutes
+                                    leurs métriques (DA, DR, trafic, thématique). Vous pouvez filtrer et sélectionner
+                                    précisément les blogs qui correspondent à votre stratégie. Chaque blog dispose d'une fiche
+                                    détaillée avec historique, exemples de contenus et profil de backlinks.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Quel délai pour la publication de mes articles ?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Une fois votre article soumis et validé, la publication est effectuée sous 48h maximum.
+                                    Pour les clients Professional et Enterprise, nous proposons une option de publication
+                                    express sous 24h. Vous recevez une notification dès que votre article est en ligne,
+                                    avec l'URL exacte et les premiers indicateurs d'indexation.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                    Proposez-vous la rédaction de contenu ?
+                                </button>
+                            </h2>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Oui, nous avons une équipe de rédacteurs spécialisés en SEO qui peuvent créer des articles
+                                    optimisés pour vous. Ce service est disponible en option avec tous nos plans. Nous proposons
+                                    différents niveaux de qualité (standard, premium, expert) adaptés à vos besoins et votre budget.
+                                    Chaque article est unique, optimisé et livré avec un rapport de plagiat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                                    Comment suivre les performances de mes backlinks ?
+                                </button>
+                            </h2>
+                            <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Notre dashboard vous offre une vue complète sur tous vos backlinks : statut d'indexation,
+                                    évolution des métriques des blogs hôtes, trafic généré, ancres utilisées, et bien plus.
+                                    Vous pouvez exporter vos données, créer des rapports personnalisés et suivre l'impact
+                                    de votre stratégie PBN sur vos positions. Les clients Professional et Enterprise bénéficient
+                                    d'analytics avancés avec prédictions et recommandations.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
+                                    Est-ce que votre service est détectable par Google ?
+                                </button>
+                            </h2>
+                            <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Nous prenons toutes les précautions pour minimiser les footprints : diversité des hébergeurs,
+                                    des thématiques, des CMS, des templates, et des profils de liens. Nos blogs ont un historique
+                                    propre et publient régulièrement du contenu de qualité. L'accès auteur renforce également
+                                    la naturalité puisque vous contrôlez votre profil. Cependant, comme tout PBN, une utilisation
+                                    intelligente et modérée est recommandée pour maintenir la sécurité à long terme.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title animate-on-scroll">Prêt à booster votre SEO ?</h2>
+                <p class="cta-subtitle animate-on-scroll">
+                    Rejoignez plus de 1200 agences et experts SEO qui nous font confiance
+                </p>
+                <div class="d-flex gap-3 justify-content-center flex-wrap animate-on-scroll">
+                    <a href="mailto:contact@crseo.click" class="btn btn-secondary-custom btn-lg">Nous contacter</a>
+                    <a href="#pricing" class="btn btn-primary-custom btn-lg" style="background: white; color: var(--secondary);">Voir les tarifs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">CRSEO.click</div>
+                    <p style="opacity: 0.8;">
+                        Votre partenaire pour une stratégie PBN performante.
+                        Des backlinks de qualité, un accès auteur complet, des résultats mesurables.
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 style="margin-bottom: 1rem; color: var(--accent);">Services</h5>
+                    <div class="footer-links">
+                        <a href="#features">PBN Premium</a>
+                        <a href="#pricing">Nos tarifs</a>
+                        <a href="#">Rédaction SEO</a>
+                        <a href="#">API</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 style="margin-bottom: 1rem; color: var(--accent);">Ressources</h5>
+                    <div class="footer-links">
+                        <a href="#faq">FAQ</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Guide SEO</a>
+                        <a href="#">Documentation</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 style="margin-bottom: 1rem; color: var(--accent);">Entreprise</h5>
+                    <div class="footer-links">
+                        <a href="#">À propos</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Carrières</a>
+                        <a href="#">Partenaires</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 style="margin-bottom: 1rem; color: var(--accent);">Légal</h5>
+                    <div class="footer-links">
+                        <a href="#">CGV</a>
+                        <a href="#">Mentions légales</a>
+                        <a href="#">Confidentialité</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p><p>&copy; <span id="current-year"> <a href="https.//crseo.click">CRSEO.click</a> - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Scroll Animation Script -->
+    <script>
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.05)';
+            }
+        });
+        // Automatic year update
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
