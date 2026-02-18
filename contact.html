@@ -435,83 +435,22 @@
                         <h2>Envoyez-nous un message</h2>
                         <p class="mb-4 text-muted">Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
 
-                        <!-- Form pointing to external site but styled for seamless integration -->
-                        <form action="https://consultant-referencement-seo.com/contactez-nous/" method="POST" id="contactForm">
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="nom" class="form-label">Nom <span class="required">*</span></label>
-                                    <input type="text" class="form-control" id="nom" name="nom" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="prenom" class="form-label">Prénom <span class="required">*</span></label>
-                                    <input type="text" class="form-control" id="prenom" name="prenom" required>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="email" class="form-label">Email <span class="required">*</span></label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="telephone" class="form-label">Téléphone</label>
-                                    <input type="tel" class="form-control" id="telephone" name="telephone">
-                                </div>
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="entreprise" class="form-label">Entreprise / Agence</label>
-                                <input type="text" class="form-control" id="entreprise" name="entreprise">
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="site-web" class="form-label">Site web</label>
-                                <input type="url" class="form-control" id="site-web" name="site-web" placeholder="https://">
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="formule" class="form-label">Formule souhaitée</label>
-                                <select class="form-select" id="formule" name="formule">
-                                    <option value="">-- Sélectionnez une formule --</option>
-                                    <option value="Starter">Starter - 299€/mois</option>
-                                    <option value="Professional">Professional - 699€/mois (Populaire)</option>
-                                    <option value="Enterprise">Enterprise - Sur devis</option>
-                                    <option value="Autre">Autre / Demande spécifique</option>
-                                </select>
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="sujet" class="form-label">Sujet <span class="required">*</span></label>
-                                <select class="form-select" id="sujet" name="sujet" required>
-                                    <option value="">-- Sélectionnez un sujet --</option>
-                                    <option value="Demande d'information">Demande d'information</option>
-                                    <option value="Devis personnalisé">Devis personnalisé</option>
-                                    <option value="Question technique">Question technique</option>
-                                    <option value="Partenariat">Partenariat</option>
-                                    <option value="Support client">Support client</option>
-                                    <option value="Autre">Autre</option>
-                                </select>
-                            </div>
-
-                            <div class="mb-4">
-                                <label for="message" class="form-label">Message <span class="required">*</span></label>
-                                <textarea class="form-control" id="message" name="message" rows="6" required placeholder="Décrivez votre projet ou votre besoin..."></textarea>
-                            </div>
-
-                            <!-- Hidden field to identify source -->
-                            <input type="hidden" name="source" value="CRSEO.click">
-                            <input type="hidden" name="redirect" value="https://crseo.click/merci.html">
-
-                            <div class="mb-3">
-                                <small class="text-muted">
-                                    <span class="required">*</span> Champs obligatoires
-                                </small>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary-custom">
-                                Envoyer le message 📨
-                            </button>
-                        </form>
+                           <!-- Iframe intégré du formulaire -->
+                        <div class="iframe-container">
+                            <iframe 
+                                src="https://contact.liveseo.org/" 
+                                width="100%" 
+                                height="800"
+                                frameborder="0"
+                                scrolling="no"
+                                title="Formulaire de contact CRSEO"
+                                allow="payment"
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
                     </div>
 
                     <!-- Additional Info -->
