@@ -6,10 +6,8 @@
     <title>Contact - CRSEO.click | PBN Premium avec Accès Auteur</title>
     <meta name="description" content="Contactez CRSEO.click pour toute question sur notre service PBN premium. Notre équipe vous répond rapidement.">
     
-    <!-- Bootstrap 5.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -154,10 +152,6 @@
             margin: 2rem 0;
         }
 
-        .info-box p {
-            margin-bottom: 0.5rem;
-        }
-
         .info-box strong {
             color: var(--secondary);
             font-family: 'Syne', sans-serif;
@@ -193,35 +187,11 @@
             margin: 0;
         }
 
-        /* Contact Form */
-        .form-label {
-            font-weight: 600;
-            color: var(--primary);
-            margin-bottom: 0.5rem;
-            font-family: 'Syne', sans-serif;
-        }
-
-        .form-control, .form-select {
-            border: 2px solid var(--border);
-            border-radius: 0;
-            padding: 0.875rem 1rem;
-            font-family: 'IBM Plex Mono', monospace;
-            transition: all 0.3s ease;
-        }
-
-        .form-control:focus, .form-select:focus {
-            border-color: var(--accent);
-            box-shadow: 0 0 0 0.2rem rgba(0, 245, 255, 0.15);
-        }
-
-        textarea.form-control {
-            min-height: 150px;
-            resize: vertical;
-        }
-
-        .required {
-            color: var(--secondary);
-            margin-left: 0.25rem;
+        /* Iframe Container */
+        .iframe-container {
+            width: 100%;
+            background: #fff;
+            position: relative;
         }
 
         /* CTA Button */
@@ -272,26 +242,6 @@
             transform: translateY(-2px);
         }
 
-        /* Success/Error Messages */
-        .alert-custom {
-            border-radius: 0;
-            border: 2px solid;
-            padding: 1.25rem;
-            margin-bottom: 2rem;
-        }
-
-        .alert-success-custom {
-            background: rgba(0, 245, 255, 0.1);
-            border-color: var(--accent);
-            color: var(--primary);
-        }
-
-        .alert-error-custom {
-            background: rgba(255, 107, 53, 0.1);
-            border-color: var(--secondary);
-            color: var(--primary);
-        }
-
         /* Footer */
         .footer {
             background: var(--primary);
@@ -327,31 +277,15 @@
             opacity: 0.7;
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
-            .page-header {
-                padding: 6rem 0 3rem;
-            }
-
-            .page-header h1 {
-                font-size: 2rem;
-            }
-
-            .contact-card {
-                padding: 2rem 1.5rem;
-            }
-
-            .info-icon {
-                width: 40px;
-                height: 40px;
-                font-size: 1.2rem;
-            }
+            .page-header { padding: 6rem 0 3rem; }
+            .page-header h1 { font-size: 2rem; }
+            .contact-card { padding: 2rem 1.5rem; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="https://crseo.click">CRSEO<span>.click</span></a>
@@ -360,15 +294,9 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://crseo.click/#features">Avantages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://crseo.click/#pricing">Tarifs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://crseo.click/#faq">FAQ</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="https://crseo.click/#features">Avantages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://crseo.click/#pricing">Tarifs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://crseo.click/#faq">FAQ</a></li>
                     <li class="nav-item">
                         <a class="btn btn-primary-custom ms-3" href="https://crseo.click/contact.html" style="width: auto; padding: 0.75rem 1.5rem;">Contact</a>
                     </li>
@@ -377,7 +305,6 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
     <section class="page-header">
         <div class="header-grid"></div>
         <div class="container">
@@ -390,15 +317,12 @@
         </div>
     </section>
 
-    <!-- Contact Content -->
     <section class="contact-content">
         <div class="container">
             <div class="row">
-                <!-- Contact Information -->
                 <div class="col-lg-4 mb-4">
                     <div class="contact-card">
                         <h2>Informations</h2>
-                        
                         <div class="info-item">
                             <div class="info-icon">📧</div>
                             <div class="info-details">
@@ -406,7 +330,6 @@
                                 <p>info@crseo.net</p>
                             </div>
                         </div>
-
                         <div class="info-item">
                             <div class="info-icon">⏰</div>
                             <div class="info-details">
@@ -414,7 +337,6 @@
                                 <p>Lundi - Vendredi<br>9h00 - 18h00 (CET)</p>
                             </div>
                         </div>
-
                         <div class="info-item">
                             <div class="info-icon">⚡</div>
                             <div class="info-details">
@@ -423,65 +345,50 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="info-box">
                         <p><strong>💡 Conseil :</strong> Pour une réponse plus rapide, précisez votre besoin (Starter, Professional ou Enterprise) dans votre message.</p>
                     </div>
                 </div>
 
-                <!-- Contact Form -->
                 <div class="col-lg-8">
                     <div class="contact-card">
                         <h2>Envoyez-nous un message</h2>
                         <p class="mb-4 text-muted">Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
 
-                          <div class="iframe-container" style="width: 100%; overflow: hidden;">
-    <iframe 
-        src="https://contact.liveseo.org/" 
-        width="100%" 
-        height="1000" 
-        frameborder="0" 
-        scrolling="auto" 
-        style="border:0; min-height: 600px; width: 100%;"
-        title="Formulaire de contact CRSEO"
-        allow="payment"
-        loading="lazy">
-    </iframe>
-</div>
-                    </div>
-                </div>
-            </div>
-                    </div>
-
-                    <!-- Additional Info -->
-                    <div class="info-box mt-4">
-                        <p><strong>🔒 Confidentialité :</strong> Vos données sont traitées de manière confidentielle et ne seront jamais partagées avec des tiers. Consultez notre <a href="mentions-legales.html" style="color: var(--secondary); text-decoration: underline;">politique de confidentialité</a>.</p>
+                        <div class="iframe-container">
+                            <iframe 
+                                src="https://contact.liveseo.org/" 
+                                width="100%" 
+                                height="1200" 
+                                frameborder="0" 
+                                scrolling="auto" 
+                                style="border:0; min-height: 700px; width: 100%;"
+                                title="Formulaire de contact CRSEO"
+                                allow="payment"
+                                loading="lazy">
+                            </iframe>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Quick Links -->
+            <div class="row">
+                <div class="col-12">
+                     <div class="info-box mt-4">
+                        <p><strong>🔒 Confidentialité :</strong> Vos données sont traitées de manière confidentielle. Consultez notre <a href="mentions-legales.html" style="color: var(--secondary); text-decoration: underline;">politique de confidentialité</a>.</p>
+                    </div>
+                </div>
+            </div>
+
             <div class="row mt-5">
                 <div class="col-12">
                     <div class="contact-card">
                         <h2>Avant de nous contacter...</h2>
                         <p class="mb-4">Vous trouverez peut-être la réponse à votre question dans nos ressources :</p>
                         <div class="row">
-                            <div class="col-md-4 mb-3">
-                                <a href="index.html#faq" class="btn btn-secondary-custom w-100">
-                                    ❓ Consulter la FAQ
-                                </a>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <a href="index.html#pricing" class="btn btn-secondary-custom w-100">
-                                    💰 Voir les tarifs
-                                </a>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <a href="index.html#features" class="btn btn-secondary-custom w-100">
-                                    ⭐ Découvrir les avantages
-                                </a>
-                            </div>
+                            <div class="col-md-4 mb-3"><a href="index.html#faq" class="btn btn-secondary-custom w-100">❓ FAQ</a></div>
+                            <div class="col-md-4 mb-3"><a href="index.html#pricing" class="btn btn-secondary-custom w-100">💰 Tarifs</a></div>
+                            <div class="col-md-4 mb-3"><a href="index.html#features" class="btn btn-secondary-custom w-100">⭐ Avantages</a></div>
                         </div>
                     </div>
                 </div>
@@ -489,16 +396,12 @@
         </div>
     </section>
 
- <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4">
                     <div class="footer-brand">CRSEO.click</div>
-                    <p style="opacity: 0.8;">
-                        Votre partenaire pour une stratégie PBN performante.
-                        Des backlinks de qualité, un accès auteur complet, des résultats mesurables.
-                    </p>
+                    <p style="opacity: 0.8;">Votre partenaire pour une stratégie PBN performante. Des backlinks de qualité, un accès auteur complet.</p>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
                     <h5 style="margin-bottom: 1rem; color: var(--accent);">Services</h5>
@@ -506,7 +409,6 @@
                         <a href="#features">PBN Premium</a>
                         <a href="#pricing">Nos tarifs</a>
                         <a href="https://pbn.crseo.net">Optimisez votre SEO</a>
-                        <a href="https://seo-world.eu/">Booster référencement</a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
@@ -515,7 +417,6 @@
                         <a href="#faq">FAQ</a>
                         <a href="#">Blog</a>
                         <a href="#">Guide SEO</a>
-                        <a href="#">Documentation</a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
@@ -523,14 +424,12 @@
                     <div class="footer-links">
                         <a href="#">À propos</a>
                         <a href="#">Contact</a>
-                        <a href="#">Carrières</a>
                         <a href="#">Partenaires</a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
                     <h5 style="margin-bottom: 1rem; color: var(--accent);">Légal</h5>
                     <div class="footer-links">
-                        <a href="https://crseo.click/">PBN avec accès auteur</a>
                         <a href="https://crseo.click/mentions-legales.html">Mentions légales</a>
                         <a href="#">Confidentialité</a>
                         <a href="#">Cookies</a>
@@ -538,25 +437,14 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p><p>&copy; <span id="current-year"> <a href="https.//crseo.click">CRSEO.click</a> - Tous droits réservés</p>
+                <p>&copy; <span id="current-year"></span> <a href="https://crseo.click" style="color:white; text-decoration:none;">CRSEO.click</a> - Tous droits réservés</p>
             </div>
         </div>
     </footer>
 
-
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
     <script>
-        // Automatic year update
         document.getElementById('current-year').textContent = new Date().getFullYear();
-
-        // Form validation and submission handling
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            // Let the form submit normally to the external URL
-            // The form will be processed by consultant-referencement-seo.com
-            // You can add client-side validation here if needed
-        });
     </script>
 </body>
 </html>
